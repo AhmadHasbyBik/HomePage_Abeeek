@@ -1,7 +1,7 @@
 {
-  "name": "craftzdog-homepage",
+  "name": "abeeek-homepage",
   "version": "1.0.0",
-  "description": "Takuya's website",
+  "description": "Abeeek's website",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",

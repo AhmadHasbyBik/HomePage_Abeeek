@@ -6,7 +6,7 @@ export default class Document extends NextDocument {
   render() {
     return (
       <Html lang="en">
-      <link rel="icon" href="apple-touch-icon.png" /> 
+      <link rel="icon" href="abeeek.png" /> 
         <Head />
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
