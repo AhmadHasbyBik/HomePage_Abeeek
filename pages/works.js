@@ -11,8 +11,8 @@ import Pegawai from '../public/images/projects/pegawai.png'
 import Face from '../public/images/projects/facedet.png'
 import LinkItem from 'next/link'
 
-const Projects = () => (
-  <Layout title="Projects">
+const Works = () => (
+  <Layout title="Project">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
         Web Projects
@@ -86,5 +86,5 @@ const Projects = () => (
   </Layout>
 )
 
-export default Projects
+export default Works
 export { getServerSideProps } from '../components/chakra'

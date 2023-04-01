@@ -78,7 +78,7 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem 
-            href="/projects" 
+            href="/works" 
             path={path} 
             display="inline-flex"
             alignItems="center"
