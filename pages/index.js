@@ -35,7 +35,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Assalamualaikum, I&apos;m an Informatics Student from Gresik!
+        Assalamu&apos;alaikum, I&apos;m an Informatics Student from Gresik!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -77,7 +77,7 @@ const Home = () => (
           Desc
         </Heading>
         <Paragraph>
-        Abik is a freelance web developer and a student at a university based in Surabaya 
+        Abik is a freelancer web developer and a student at an university based in Surabaya 
         with a passion for building creative and functional web applications. 
         He enjoys the process of transforming complex ideas into intuitive designs and solving 
         real-world problems with code. When not coding, he really loves sleeping. 
@@ -86,12 +86,12 @@ const Home = () => (
         <Box align="center" my={4}>
           <Button
             as={NextLink}
-            href="/works"
+            href="/projects"
             scroll={false}
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
           >
-            My projects
+            His projects
           </Button>
         </Box>
       </Section>
