@@ -118,7 +118,7 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Skills
         </Heading>
-        <SimpleGrid columns={3} justifyContent="center" alignItems="center">
+        <SimpleGrid columns={2} justifyContent="center" alignItems="center">
           <Box display="flex">
             <Icon as={IoLogoHtml5} boxSize="1.2em" mr="3" />
             <Text>HTML</Text>
