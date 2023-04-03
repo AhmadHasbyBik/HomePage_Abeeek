@@ -1,3 +1,6 @@
+import { IoLogoLaravel, IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoPython } from 'react-icons/io5'
+import { SiC, SiCodeigniter, SiCplusplus, SiDocker, SiExpress, SiGithub, SiMongodb, SiMysql, SiNodedotjs, SiPhp, SiPhpmyadmin, SiPostman, SiReact, SiVisualstudiocode } from 'react-icons/si'
+import { TbApi, TbBrandNextjs  } from 'react-icons/tb'
 import NextLink from 'next/link'
 import {
   Link,
@@ -9,15 +12,17 @@ import {
   List,
   ListItem,
   useColorModeValue,
-  chakra
+  chakra,
+  Icon,
+  Text
 } from '@chakra-ui/react'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
+import Skills from '../components/skills'
 import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -87,11 +92,10 @@ const Home = () => (
           <Button
             as={NextLink}
             href="/works"
-            scroll={false}
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
           >
-            His projects
+            His Projects
           </Button>
         </Box>
       </Section>
@@ -108,6 +112,111 @@ const Home = () => (
           <BioYear>2020 - Present</BioYear>
           Student of Informatics at UPN Veteran Jatim
         </BioSection>
+      </Section>
+
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Skills
+        </Heading>
+        <SimpleGrid columns={3} justifyContent="center" alignItems="center">
+          <Box display="flex">
+            <Icon as={IoLogoHtml5} boxSize="1.2em" mr="3" />
+            <Text>HTML</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={IoLogoCss3} boxSize="1.2em" mr="3" />
+            <Text>CSS</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={IoLogoJavascript} boxSize="1.2em" mr="3" />
+            <Text>JavaScript</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={SiPhp} boxSize="1.2em" mr="3" />
+            <Text>PHP</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={SiMysql} boxSize="1.2em" mr="3" />
+            <Text>MySQL</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={SiMongodb} boxSize="1.2em" mr="3" />
+            <Text>MongoDB Atlas</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={SiCodeigniter} boxSize="1.2em" mr="3" />
+            <Text>Codeigniter</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={IoLogoLaravel} boxSize="1.2em" mr="3" />
+            <Text>Laravel</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={SiNodedotjs} boxSize="1.2em" mr="3" />
+            <Text>Node.js</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={TbBrandNextjs} boxSize="1.2em" mr="3" />
+            <Text>Next</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={SiReact} boxSize="1.2em" mr="3" />
+            <Text>React</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={SiExpress} boxSize="1.2em" mr="3" />
+            <Text>Express</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={TbApi} boxSize="1.2em" mr="3" />
+            <Text>API</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={IoLogoPython} boxSize="1.2em" mr="3" />
+            <Text>Python</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={SiCplusplus} boxSize="1.2em" mr="3" />
+            <Text>C++</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={SiC} boxSize="1.2em" mr="3" />
+            <Text>C</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={SiPhpmyadmin} boxSize="1.2em" mr="3" />
+            <Text>PhpMyAdmin</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={SiDocker} boxSize="1.2em" mr="3" />
+            <Text>Docker</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={SiGithub} boxSize="1.2em" mr="3" />
+            <Text>Github</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={SiVisualstudiocode} boxSize="1.2em" mr="3" />
+            <Text>VScode</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={SiPostman} boxSize="1.2em" mr="3" />
+            <Text>Postman</Text>
+          </Box>
+        </SimpleGrid>
+      </Section>
+
+      <Section delay={0.1}>
+        <Box align="center" my={4}>
+          <Button
+            as={NextLink}
+            href="/games"
+            rightIcon={<ChevronRightIcon />}
+            colorScheme="red"
+          >
+            Let&apos;s Play Games!
+          </Button>
+        </Box>
       </Section>
 
       

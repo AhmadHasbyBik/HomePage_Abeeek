@@ -17,7 +17,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-import { IoCodeSlash, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { IoCodeSlash, IoLogoGithub, IoLogoLinkedin, IoGameController } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -28,8 +28,6 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       href={href}
       scroll={false}
       p={2}
-      bg={active ? 'grassTeal' : undefined}
-      color={active ? '#202023' : inactiveColor}
       target={target}
       {...props}
     >
@@ -88,6 +86,17 @@ const Navbar = props => {
             <IoCodeSlash/>
             Projects
           </LinkItem>
+          <LinkItem 
+            href="/games" 
+            path={path} 
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <IoGameController/>
+            Games
+          </LinkItem>
           <LinkItem
             target="_blank"
             href="https://github.com/AhmadHasbyBik"
@@ -129,6 +138,11 @@ const Navbar = props => {
                 <MenuItem as={MenuLink} href="/works">
                 <IoCodeSlash />
                   &nbsp;Projects
+                </MenuItem>
+
+                <MenuItem as={MenuLink} href="/games">
+                <IoGameController />
+                  &nbsp;Games
                 </MenuItem>
                 
                 <MenuItem
