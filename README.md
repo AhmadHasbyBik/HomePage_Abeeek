@@ -1,1 +1,1 @@
-ahmadhasbybik.vercel.app/
+https://ahmadhasbybik.vercel.app/
