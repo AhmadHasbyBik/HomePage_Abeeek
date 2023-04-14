@@ -1,5 +1,5 @@
 import { IoLogoLaravel, IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoPython } from 'react-icons/io5'
-import { SiC, SiCodeigniter, SiCplusplus, SiDocker, SiExpress, SiGithub, SiMongodb, SiMysql, SiNodedotjs, SiPhp, SiPhpmyadmin, SiPostman, SiReact, SiVisualstudiocode } from 'react-icons/si'
+import { SiBootstrap, SiC, SiCodeigniter, SiCplusplus, SiDocker, SiExpress, SiGithub, SiGooglecloud, SiMongodb, SiMysql, SiNodedotjs, SiPhp, SiPhpmyadmin, SiPostman, SiReact, SiTailwindcss, SiVisualstudiocode } from 'react-icons/si'
 import { TbApi, TbBrandNextjs  } from 'react-icons/tb'
 import NextLink from 'next/link'
 import {
@@ -110,7 +110,11 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2020 - Present</BioYear>
-          Student of Informatics at UPN Veteran Jatim
+          Ungraduated Student of Informatics at UPN Veteran Jatim.
+        </BioSection>
+        <BioSection>
+          <BioYear>2023</BioYear>
+          Certified Apprentice as Cloud Computing Engineer at Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka.
         </BioSection>
       </Section>
 
@@ -126,6 +130,14 @@ const Home = () => (
           <Box display="flex" alignItems="center">
             <Icon as={IoLogoCss3} boxSize="1.2em" mr="3" />
             <Text>CSS</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={SiTailwindcss} boxSize="1.2em" mr="3" />
+            <Text>Tailwind</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={SiBootstrap} boxSize="1.2em" mr="3" />
+            <Text>Bootstrap</Text>
           </Box>
           <Box display="flex" alignItems="center">
             <Icon as={IoLogoJavascript} boxSize="1.2em" mr="3" />
@@ -202,6 +214,10 @@ const Home = () => (
           <Box display="flex" alignItems="center">
             <Icon as={SiPostman} boxSize="1.2em" mr="3" />
             <Text>Postman</Text>
+          </Box>
+          <Box display="flex" alignItems="center">
+            <Icon as={SiGooglecloud} boxSize="1.2em" mr="3" />
+            <Text>Cloud Computing</Text>
           </Box>
         </SimpleGrid>
       </Section>

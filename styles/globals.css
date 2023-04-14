@@ -25,5 +25,68 @@
     background-color: crimson;
   }
   
-
+  .board {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-gap: 8px;
+  }
   
+  .card {
+    border-radius: 4px;
+    text-align: center;
+    height: 75px;
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.2s;
+    user-select: none;
+  }
+  .card.gameover {
+    pointer-events: none;
+  }
+  .card-0 {
+    transform: rotateY(0deg);
+  }
+  .card.active {
+    transform: rotateY(180deg);
+  }
+  .card.matched .card-front {
+    background-color: lightgoldenrodyellow;
+    color: white;
+  }
+  .card-front,
+  .card-back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    height: 100%;
+    border-radius: 50%;
+  }
+  .card-front {
+    transform: rotateY(180deg);
+    background-color: #eee;
+    line-height: 70px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 50px;
+  
+    z-index: 2;
+  }
+  .card-back {
+    background-color: #ddd;
+  
+    transform: rotateY(0);
+    z-index: 1;
+  }
+  .card-back::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+  }
