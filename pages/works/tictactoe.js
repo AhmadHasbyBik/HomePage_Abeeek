@@ -4,17 +4,17 @@ import Section from '../../components/section'
 import { WorkGridItem } from '../../components/grid-item'
 import Head from "next/head";
 import Board from "../../components/board";
+import { Title, Meta } from '../../components/game'
+
 const tictactoe = () => (
     <Layout title="Tic Tac Toe">
       <Container maxW="min-content">
-        <Heading as="h3" fontSize={20} mb={4}>
-          Tic Tac Toe
-        </Heading>
+        <Title>
+        Tic Tac Toe
+        </Title>
 
-        <SimpleGrid m={2} gap={6} gridGap={2}>
-          <Section >
+        <SimpleGrid>
             <Board/>
-          </Section>
         </SimpleGrid>
       </Container>
   </Layout>

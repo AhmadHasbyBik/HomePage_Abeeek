@@ -118,6 +118,19 @@ const Home = () => (
         </BioSection>
       </Section>
 
+      <Section delay={0.1}>
+        <Box align="center" my={4}>
+          <Button
+            as={NextLink}
+            href="/courses"
+            rightIcon={<ChevronRightIcon />}
+            colorScheme="yellow"
+          >
+            His Courses
+          </Button>
+        </Box>
+      </Section>
+
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
           Skills
@@ -217,7 +230,7 @@ const Home = () => (
           </Box>
           <Box display="flex" alignItems="center">
             <Icon as={SiGooglecloud} boxSize="1.2em" mr="3" />
-            <Text>Cloud Computing</Text>
+            <Text>Google Cloud</Text>
           </Box>
         </SimpleGrid>
       </Section>

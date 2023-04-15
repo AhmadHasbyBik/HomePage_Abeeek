@@ -3,15 +3,17 @@ import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
 import { WorkGridItem } from '../../components/grid-item'
 import Head from "next/head";
-import Match from "../../components/matching";
+import Match from "../../components/matching"
+import { Title, Meta } from '../../components/game'
+
 const match = () => (
     <Layout title="Matching Objects">
       <Container maxW="min-content">
-        <Heading as="h3" fontSize={20} mb={4}>
+        <Title>
           Matching Objects
-        </Heading>
+        </Title>
 
-        <SimpleGrid m={2} gap={6} gridGap={2}>
+        <SimpleGrid>
           <Section >
             <Match/>
           </Section>

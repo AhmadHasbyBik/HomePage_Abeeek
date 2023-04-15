@@ -6,48 +6,35 @@ import {SiGooglecloud} from 'react-icons/si'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import { IoCodeSlash } from 'react-icons/io5'
 
-import NextLink from 'next/link'
+import gcp from '../public/images/projects/gcp.png'
+import dicoding from '../public/images/projects/dicoding.png'
 
-const Courses = () => (
-  <Layout title="Courses Sertificates">
+const Works = () => (
+  <Layout title="Certificate Courses">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-      Courses Sertificates
+      Certificate Courses
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-        <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="https://www.cloudskillsboost.google/public_profiles/02b8fd9f-178c-4566-9e53-a505afc52838"
-            rightIcon={<ChevronRightIcon />}
-            colorScheme="pink"
-          >
-            <SiGooglecloud/>
-            &nbsp;GoogleSkillBoost
-          </Button>
-        </Box>
+          <WorkGridItem
+            id="skillboost" 
+            title="Google Skill Boost"
+            thumbnail={gcp}>
+          </WorkGridItem>
         </Section>
-
         <Section>
-        <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="https://www.dicoding.com/users/abikahmad/academies"
-            rightIcon={<ChevronRightIcon />}
-            colorScheme="purple"
-          >
-            <IoCodeSlash />
-            &nbsp;Dicoding
-          </Button>
-        </Box>
+          <WorkGridItem
+              id="dicoding"
+              title="Dicoding"
+              thumbnail={dicoding}>
+            </WorkGridItem>
         </Section>
-        
       </SimpleGrid>
     </Container>
   </Layout>
 )
 
-export default Courses
+export default Works
 export { getServerSideProps } from '../components/chakra'
