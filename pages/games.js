@@ -5,6 +5,7 @@ import { WorkGridItem } from '../components/grid-item'
 
 import tictactoe from '../public/images/projects/tictactoe.png'
 import match from '../public/images/projects/memory.png'
+import snake from '../public/images/projects/snake.png'
 import LinkItem from 'next/link'
 
 const Works = () => (
@@ -15,6 +16,15 @@ const Works = () => (
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <Section>
+          <WorkGridItem
+            id="match" 
+            title="Matching Objects"
+            thumbnail={match}>
+             a player need to remember the location of various objects
+          </WorkGridItem>
+        </Section>
+
         <Section>
           <WorkGridItem
             id="tictactoe" 
@@ -23,13 +33,13 @@ const Works = () => (
              a two-player game typically played on a 3x3 grid
           </WorkGridItem>
         </Section>
-
+        
         <Section>
           <WorkGridItem
-            id="match" 
-            title="Matching Objects"
-            thumbnail={match}>
-             a player need to remember the location of various objects
+            id="snake" 
+            title="Snake"
+            thumbnail={snake}>
+             a PC Desktop snake game with 'WASD' move
           </WorkGridItem>
         </Section>
         

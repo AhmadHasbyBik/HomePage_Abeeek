@@ -17,6 +17,10 @@
     "@chakra-ui/react": "^2.4.6",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@use-it/interval": "^1.0.0",
     "framer-motion": "^8.4.0",
     "next": "^13.1.1",
     "react": "^18.2.0",
@@ -25,6 +29,8 @@
     "three": "^0.148.0"
   },
   "devDependencies": {
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.35",
     "eslint": "^8.31.0",
     "eslint-config-next": "^13.1.1",
     "prettier": "^2.8.2"
