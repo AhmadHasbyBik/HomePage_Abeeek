@@ -24,7 +24,7 @@ const Works = () => (
             id="digibeeek" 
             title="Digibeeek"
             thumbnail={Digibeeek}>
-            a simple gadget online shop using Laravel
+            a simple gadget online shop
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
@@ -33,7 +33,7 @@ const Works = () => (
             title="Course Registration Application"
             thumbnail={KRS}
           >
-            a course registration application with login and admin features using Codeigniter 4
+            a course registration application with login and admin features
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
@@ -51,7 +51,7 @@ const Works = () => (
             title="Official Leave Application Website"
             thumbnail={Cuti}
           >
-            a Front End website using materialUI and Nextjs
+            an Official Leave Application Website
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
@@ -60,7 +60,7 @@ const Works = () => (
               title="CAVIAR App"
               thumbnail={Caviar}
             >
-              Crosswalk Assistance App for the Visually Impaired Peoples
+              a Crosswalk Assistance App for the Visually Impaired Peoples
             </WorkGridItem>
         </Section>
       </SimpleGrid>
