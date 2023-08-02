@@ -42,7 +42,7 @@ const Works = () => (
             title="Staff Data"
             thumbnail={Pegawai}
           >
-            a CRUD website using Laravel
+            a CRUD website
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
@@ -51,7 +51,7 @@ const Works = () => (
             title="Official Leave Application Website"
             thumbnail={Cuti}
           >
-            an Official Leave Application Website
+            an official leave application website
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
@@ -60,7 +60,7 @@ const Works = () => (
               title="CAVIAR App"
               thumbnail={Caviar}
             >
-              a Crosswalk Assistance App for the Visually Impaired Peoples
+              a crosswalk assistance app for the visually impaired peoples
             </WorkGridItem>
         </Section>
       </SimpleGrid>
