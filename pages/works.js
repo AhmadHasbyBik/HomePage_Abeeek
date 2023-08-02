@@ -5,8 +5,8 @@ import { WorkGridItem } from '../components/grid-item'
 
 import Digibeeek from '../public/images/projects/digibeek.png'
 import KRS from '../public/images/projects/krs.png'
-import Auth from '../public/images/projects/auth.png'
-import Netflix from '../public/images/projects/netflix.png'
+import Caviar from '../public/images/projects/caviar.png'
+import Cuti from '../public/images/projects/cutix.png'
 import Pegawai from '../public/images/projects/pegawai.png'
 import Face from '../public/images/projects/facedet.png'
 import LinkItem from 'next/link'
@@ -27,16 +27,6 @@ const Works = () => (
             a simple gadget online shop using Laravel
           </WorkGridItem>
         </Section>
-        <Section>
-          <WorkGridItem
-              id="auth"
-              title="Authentication Credentials"
-              thumbnail={Auth}
-            >
-              a login website with Google account or Github account using Nextjs
-            </WorkGridItem>
-        </Section>
-
         <Section delay={0.1}>
         <WorkGridItem
             id="krs"
@@ -48,21 +38,30 @@ const Works = () => (
         </Section>
         <Section delay={0.1}>
         <WorkGridItem
-            id="netflix"
-            title="Netflix Page"
-            thumbnail={Netflix}
-          >
-            a Front End website using materialUI and Nextjs
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.1}>
-        <WorkGridItem
             id="pegawai"
             title="Staff Data"
             thumbnail={Pegawai}
           >
             a CRUD website using Laravel
           </WorkGridItem>
+        </Section>
+        <Section delay={0.1}>
+        <WorkGridItem
+            id="cuti"
+            title="Official Leave Application Website"
+            thumbnail={Cuti}
+          >
+            a Front End website using materialUI and Nextjs
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.1}>
+          <WorkGridItem
+              id="caviar"
+              title="CAVIAR App"
+              thumbnail={Caviar}
+            >
+              Crosswalk Assistance App for the Visually Impaired Peoples
+            </WorkGridItem>
         </Section>
       </SimpleGrid>
 
